@@ -14,7 +14,7 @@ import "./index.css";
 function App() {
   return (
     <Provider store={store}>
-      <Router>
+      <Router basename="/new-vite-react">
         <Routes>
           <Route path="/" element={<Navigate to="/products" replace />} />
           <Route path="/products" element={<ProductsPage />} />
